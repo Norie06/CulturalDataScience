@@ -8430,7 +8430,7 @@ This will come in handy for your projects when you have to work with potentially
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [333]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [693]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Excercise - Find the longest petal length and the median petal length</span>
@@ -8442,7 +8442,7 @@ This will come in handy for your projects when you have to work with potentially
 
 <span class="c1"># and subset the flowers that are between the median and one centimeter shorter than max length</span>
 <span class="n">between_flowers</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">"petal length (cm)"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">median</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"petal length (cm)"</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">longest</span><span class="o">-</span><span class="mi">1</span><span class="p">))]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">between_flowers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">between_flowers</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -8457,20 +8457,12 @@ This will come in handy for your projects when you have to work with potentially
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>6.9
 4.35
-     sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)
-50                 7.0               3.2                4.7               1.4
-51                 6.4               3.2                4.5               1.5
-52                 6.9               3.1                4.9               1.5
-54                 6.5               2.8                4.6               1.5
-55                 5.7               2.8                4.5               1.3
-..                 ...               ...                ...               ...
-145                6.7               3.0                5.2               2.3
-146                6.3               2.5                5.0               1.9
-147                6.5               3.0                5.2               2.0
-148                6.2               3.4                5.4               2.3
-149                5.9               3.0                5.1               1.8
-
-[62 rows x 4 columns]
+    sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)
+50                7.0               3.2                4.7               1.4
+51                6.4               3.2                4.5               1.5
+52                6.9               3.1                4.9               1.5
+54                6.5               2.8                4.6               1.5
+55                5.7               2.8                4.5               1.3
 </pre>
 </div>
 </div>
@@ -8493,7 +8485,7 @@ We can choose to sort our data in order of something of interest.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [334]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [694]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># we could sort the data by a specific column in both ascending and descending order</span>
@@ -8509,7 +8501,7 @@ We can choose to sort our data in order of something of interest.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[334]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[694]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8583,7 +8575,7 @@ We can choose to sort our data in order of something of interest.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [335]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [695]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Excercise - sort the data by petal width in ascending order and select the 10 flowers with the smallest petal width</span>
@@ -8635,7 +8627,7 @@ Should you work with time seires data and would like to mirror (flip) your data,
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [336]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [696]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
@@ -8689,7 +8681,7 @@ Sometimes we have multiple dataframes we woudl like to add together. Maybe you h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [337]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [697]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Joining a bit of the iris data with a new dataframe (we will make up some data here)</span>
@@ -8713,7 +8705,7 @@ Sometimes we have multiple dataframes we woudl like to add together. Maybe you h
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[337]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[697]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8860,7 +8852,7 @@ This is important if your dataframes do not have the same amount of rows</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [338]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [698]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Excercise - Which types of join (the 'how=') will work in the example above? Try them out and see what happens</span>
@@ -8883,7 +8875,7 @@ This is important if your dataframes do not have the same amount of rows</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[338]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[698]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9014,7 +9006,7 @@ This is important if your dataframes do not have the same amount of rows</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [339]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [699]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Excercise 2 - Add a row to one of the dataframes and see what happens when you join them again</span>
@@ -9033,7 +9025,7 @@ This is important if your dataframes do not have the same amount of rows</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[339]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[699]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9176,7 +9168,7 @@ You can also join two dataframes bu simply gluing them together.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [340]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [700]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We just made a subset of the original dataframe called 'first_10' now we find the last 10 and glue them together</span>
@@ -9196,7 +9188,7 @@ You can also join two dataframes bu simply gluing them together.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[340]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[700]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9431,7 +9423,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [341]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [701]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Starter code</span>
@@ -9469,7 +9461,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[341]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[701]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9561,7 +9553,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [516]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [702]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Print the artist and single from the year you were born</span>
@@ -9578,7 +9570,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[516]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[702]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9615,7 +9607,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [517]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [703]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Print the artist and single from the year you were 15 years old. </span>
@@ -9630,7 +9622,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[517]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[703]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9683,7 +9675,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [704]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Starter code.</span>
@@ -9712,7 +9704,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[704]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9780,7 +9772,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [608]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [705]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## The year with the most launches </span>
@@ -9819,7 +9811,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [636]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [706]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The month with the most launches </span>
@@ -9851,7 +9843,7 @@ So, while you solve the yellow excercises ensure that you add some meaningful co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [647]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [707]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Ranking of months with the most to the fewest launches</span>
@@ -9908,7 +9900,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [664]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [708]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#supervillandata = pd.read_html("https://en.wikipedia.org/wiki/List_of_comic_book_supervillain_debuts")</span>
@@ -9937,7 +9929,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [689]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [712]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Write a script that combines the tables showing supervillain debuts from the 30's through the 2010's</span>
@@ -9949,7 +9941,7 @@ Name: count, dtype: int64
 <span class="n">df_supervillan</span> <span class="o">=</span> <span class="n">df_supervillan</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'Clean year'</span><span class="p">])</span>
 <span class="n">df_supervillan</span><span class="p">[</span><span class="s1">'Decade'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_supervillan</span><span class="p">[</span><span class="s1">'Clean year'</span><span class="p">]</span> <span class="o">//</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'s'</span>
 
-<span class="n">df_supervillan</span>
+<span class="n">df_supervillan</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -9960,7 +9952,7 @@ Name: count, dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[689]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[712]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10040,69 +10032,8 @@ Name: count, dtype: int64
 <td>1940.0</td>
 <td>1940s</td>
 </tr>
-<tr>
-<th>...</th>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr>
-<th>673</th>
-<td>Respawn</td>
-<td>2021 (June)</td>
-<td>DC</td>
-<td>Joshua Williamson, Gleb Melnikov</td>
-<td>Robin vol. 3 #1</td>
-<td>2021.0</td>
-<td>2020s</td>
-</tr>
-<tr>
-<th>674</th>
-<td>Devil Ray</td>
-<td>2021 (November)</td>
-<td>DC</td>
-<td>Dwayne McDuffie</td>
-<td>Black Manta #1</td>
-<td>2021.0</td>
-<td>2020s</td>
-</tr>
-<tr>
-<th>675</th>
-<td>Theus</td>
-<td>2021 (October)</td>
-<td>Image Comics</td>
-<td>Todd McFarlane</td>
-<td>Gunslinger Spawn #1</td>
-<td>2021.0</td>
-<td>2020s</td>
-</tr>
-<tr>
-<th>676</th>
-<td>Kira Kosov</td>
-<td>2021 (November)</td>
-<td>DC</td>
-<td>James Tynion IV, Jorge Jiménez</td>
-<td>Batman vol. 3 #112</td>
-<td>2021.0</td>
-<td>2020s</td>
-</tr>
-<tr>
-<th>677</th>
-<td>The Forsaken</td>
-<td>2021 (December)</td>
-<td>Image Comics</td>
-<td>Todd McFarlane</td>
-<td>Spawn #325</td>
-<td>2021.0</td>
-<td>2020s</td>
-</tr>
 </tbody>
 </table>
-<p>291 rows × 7 columns</p>
 </div>
 </div>
 </div>
@@ -10113,7 +10044,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [690]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [713]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 2. Write a script that ranks each decade in terms of how many supervillains debuted in that decade</span>
@@ -10154,7 +10085,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [692]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [714]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 3. Write a script that ranks the different comics companies in terms of how many supervillains they have, and display the results </span>
